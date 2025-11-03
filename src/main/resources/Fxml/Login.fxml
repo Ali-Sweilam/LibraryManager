@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.textfield.CustomPasswordField?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanager.Controllers.LoginController">
+   <children>
+      <VBox layoutX="-48.0" layoutY="20.0" prefHeight="400.0" prefWidth="300.0" styleClass="login_logo_container" stylesheets="@../Styles/Login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIcon glyphName="BOOK" size="5em" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Library Manager" />
+         </children>
+      </VBox>
+      <Button fx:id="closeBtn" cancelButton="true" layoutX="542.0" layoutY="1.0" mnemonicParsing="false" styleClass="close" stylesheets="@../Styles/Login.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="CLOSE" />
+         </graphic>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="400.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="45.0">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="400.0" layoutY="136.3799991607666" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <CustomTextField fx:id="username_fld" layoutX="335.0" layoutY="181.0" prefWidth="250.0" promptText="username" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="25.0" />
+      <CustomPasswordField fx:id="password_fld" layoutX="324.0" layoutY="223.0" prefWidth="250.0" promptText="password" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="25.0" />
+      <JFXButton fx:id="login_btn" defaultButton="true" layoutX="375.0" layoutY="301.0" prefHeight="33.0" prefWidth="150.0" ripplerFill="#65f27a" text="Login" AnchorPane.rightAnchor="75.0" />
+      <Label fx:id="errorLogin_lb" alignment="CENTER" layoutX="305.0" layoutY="154.0" prefHeight="18.0" prefWidth="262.0" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="5.0" />
+      <JFXCheckBox layoutX="325.0" layoutY="263.0" text="Remember me">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton layoutX="472.0" layoutY="259.0" text="Forgot password?">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
