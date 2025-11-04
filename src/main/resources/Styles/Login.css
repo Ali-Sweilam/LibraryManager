@@ -9,7 +9,17 @@
     -fx-background-color: #fb3d63;
 }
 
+.hyperlink {
+    -fx-text-fill: #132A13;
+    -fx-underline: false;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0;
+}
 
+.hyperlink:hover {
+    -fx-text-fill: #0077cc;
+}
 
 
 .login_container {
