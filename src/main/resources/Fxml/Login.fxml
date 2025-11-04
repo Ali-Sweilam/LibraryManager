@@ -12,7 +12,7 @@
 <?import org.controlsfx.control.textfield.CustomPasswordField?>
 <?import org.controlsfx.control.textfield.CustomTextField?>
 
-<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanager.Controllers.LoginController">
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanager.Controllers.LoginController">
    <children>
       <VBox layoutX="-48.0" layoutY="20.0" prefHeight="400.0" prefWidth="300.0" styleClass="login_logo_container" stylesheets="@../Styles/Login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
